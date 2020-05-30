@@ -18,7 +18,13 @@ earth = Planet.new()
 mars = Planet.new()
  
 # (A)
-
+def earth.life?()
+  puts "Positively!"
+end
+ 
+def pluto.life?()
+  puts "Probably not."
+end
  
 pluto.life?()  #=> Probably not.
 earth.life?()  #=> Positively!
