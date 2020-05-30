@@ -1,3 +1,13 @@
+# コンテンツ概要
+# コード例で定義しているPostcardクラスは、Mailモジュールをインクルードしています。そのMailモジュールを定義しましょう。Mailモジュールがインクルードした結果、Postcardクラスに渡される機能は、出力例から推測してください。
+
+# この演習を回答するのに必要と思われる時間は、10分です。
+
+# 演習
+# 以下のコード例を実行した時に、出力例のような文が標準出力へ出力されるように、コードにincludeされる「Mail」モジュールを定義してください。
+
+# コード例
+
 module Mail
   require 'Date'
 
@@ -31,18 +41,5 @@ card = Postcard.new("Me", "Friend")
 card.write("Did you forget my birthsday?")
 card.send
 puts "-" * 60
-# sleep(2)
+sleep(2)
 puts card
-
-# p Date.today.strftime("%a")
-
-# Tue Mar 22 11:59:16 +0900 2011: Sending a Postcard to Friend.
-# ------------------------------------------------------------
-# Postcard of Tue Mar 22 11:59:16 +0900 2011:
-
-# Dear Friend,
-
-# Did you forget my birthsday?
-
-# Sincerely,
-# Me
