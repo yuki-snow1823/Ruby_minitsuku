@@ -18,10 +18,14 @@ class Tool
   end
 end
 
-class Hammer << Tool
-  
+class Hammer < Tool
+  def use
+    super
+    puts "Bum bam bam"
+  end
 end
 Hammer.new("red").use
+
 # 出力例
 # Picks up red Hammer
 # Bam bam bam
